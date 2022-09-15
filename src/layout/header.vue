@@ -1,15 +1,19 @@
 <template>
-  <div>
 
-      <el-dropdown >
-        <i class="el-icon-setting" style="margin-right:15px ;color:white; "></i>
+  <div>
+    <i class="el-icon-reading" style="margin-right: 1100px; color:#ffffff; background-color:#1876f1;font-size: 35px    "></i>
+
+
+      <el-dropdown  >
+
+        <i class="el-icon-setting" style="color:#1876f1;margin-right: 10px;font-size: 18px ">  </i>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item v-if="!authenticated"><span @click="login">Kirish</span></el-dropdown-item>
-          <el-dropdown-item v-else-if="authenticated"><span @click="logout">Chiqish</span></el-dropdown-item>
+          <el-dropdown-item v-if="!authenticated"><span style="color:#1876f1 " @click="login">Kirish</span></el-dropdown-item>
+          <el-dropdown-item v-else-if="authenticated"><span style="color:#1876f1 " @click="logout">Chiqish</span></el-dropdown-item>
 <!--          <el-dropdown-item>Delete</el-dropdown-item>-->
         </el-dropdown-menu>
       </el-dropdown>
-      <span v-if="authenticated">{{fullName}}</span>
+      <span v-if="authenticated" style="color:#1876f1;">{{ fullName}}</span>
 
 
   </div>

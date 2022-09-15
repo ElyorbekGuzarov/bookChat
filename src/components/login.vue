@@ -1,9 +1,9 @@
 <template>
-  <div style="margin-top: 160px">
+  <div style="margin-top: 100px">
     <el-row :gutter="12">
       <el-col :span="8" :offset="8">
 
-        <el-card shadow="always" style="padding-top: 25px;padding-bottom: 10px">
+        <el-card shadow="always" style="">
           <h1 style="padding-bottom:25px;color: #5f7ab5 ">Assalomu alaykum</h1>
           <el-row style="margin-left:35px" :gutter="20">
             <el-col :span="21" >

@@ -2,7 +2,7 @@
   <div id="app" style="background-color:#E9EEF3 ">
 
     <el-container >
-      <el-header style="text-align: right; font-size: 12px"><Headers></Headers></el-header>
+      <el-header style="text-align: right; font-size: 13.8px"><Headers></Headers></el-header >
       <el-main ><router-view>
 
           </router-view></el-main>
@@ -49,7 +49,7 @@ export default {
 
 
  .el-header{
-   background-color: #3399f8;
+   background-color: #fafafc;
    color: #fff;
    text-align: center;
    line-height: 60px;
@@ -70,7 +70,7 @@ export default {
 }
 
 .el-main {
-  background-color: #E9EEF3;
+  background-color: #f6f8fa;
   color: #333;
   text-align: center;
   size: 123px;
