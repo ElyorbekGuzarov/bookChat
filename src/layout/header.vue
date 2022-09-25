@@ -1,22 +1,42 @@
 <template>
 
-  <div>
-    <i class="el-icon-reading" style="margin-right: 1100px; color:#ffffff; background-color:#1876f1;font-size: 35px    "></i>
+  <div class="body">
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"> <span>Book Chat</span> </h1>
+          <ul>
+            <li>
+              <el-dropdown-item v-if="!authenticated"><span  @click="login">Kirish</span></el-dropdown-item>
+              <el-dropdown-item v-else-if="authenticated"><span  @click="logout">Chiqish</span></el-dropdown-item>
+            </li>
+            <li>
+<!--              <span v-if="authenticated" >{{ fullName}}</span>-->
+            </li>
+          </ul>
+        </div>
 
-
-      <el-dropdown  >
-
-        <i class="el-icon-setting" style="color:#1876f1;margin-right: 10px;font-size: 18px ">  </i>
-        <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item v-if="!authenticated"><span style="color:#1876f1 " @click="login">Kirish</span></el-dropdown-item>
-          <el-dropdown-item v-else-if="authenticated"><span style="color:#1876f1 " @click="logout">Chiqish</span></el-dropdown-item>
-<!--          <el-dropdown-item>Delete</el-dropdown-item>-->
-        </el-dropdown-menu>
-      </el-dropdown>
-      <span v-if="authenticated" style="color:#1876f1;">{{ fullName}}</span>
-
-
+      </nav>
+    </header>
   </div>
+
+<!--  <div>-->
+<!--    <i class="el-icon-reading" style="margin-right: 1100px; color:#ffffff; background-color:#1876f1;font-size: 35px    "></i>-->
+
+
+<!--      <el-dropdown  >-->
+
+<!--        <i class="el-icon-setting" style="color:#1876f1;margin-right: 10px;font-size: 18px ">  </i>-->
+<!--        <el-dropdown-menu slot="dropdown">-->
+<!--          <el-dropdown-item v-if="!authenticated"><span style="color:#1876f1 " @click="login">Kirish</span></el-dropdown-item>-->
+<!--          <el-dropdown-item v-else-if="authenticated"><span style="color:#1876f1 " @click="logout">Chiqish</span></el-dropdown-item>-->
+<!--&lt;!&ndash;          <el-dropdown-item>Delete</el-dropdown-item>&ndash;&gt;-->
+<!--        </el-dropdown-menu>-->
+<!--      </el-dropdown>-->
+<!--      <span v-if="authenticated" style="color:#1876f1;">{{ fullName}}</span>-->
+
+
+<!--  </div>-->
 </template>
 
 <script>
@@ -53,5 +73,13 @@ export default {
 </script>
 
 <style scoped>
+
+/*.el-header{*/
+/*  background-color: #fafafc;*/
+/*  color: #fff;*/
+/*  text-align: center;*/
+/*  line-height: 60px;*/
+/*}*/
+
 
 </style>
